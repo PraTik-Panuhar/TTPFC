@@ -1,0 +1,61 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/pratik/Downloads/totempole/build/bootloader/esp-idf/esptool_py && /home/pratik/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/pratik/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/pratik/Downloads/totempole/build/bootloader/bootloader.bin
+Bootloader binary size 0x65a0 bytes. 0xa60 bytes (9%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ttpfc.c.obj
+In file included from /home/pratik/Downloads/totempole/main/ttpfc.c:5:
+/home/pratik/esp/esp-idf/components/driver/deprecated/driver/mcpwm.h:15:2: warning: #warning "legacy MCPWM driver is deprecated, please migrate to the new driver (include driver/mcpwm_prelude.h)" [-Wcpp]
+   15 | #warning "legacy MCPWM driver is deprecated, please migrate to the new driver (include driver/mcpwm_prelude.h)"
+      |  ^~~~~~~
+In file included from /home/pratik/Downloads/totempole/main/ttpfc.c:6:
+/home/pratik/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from /home/pratik/Downloads/totempole/main/ttpfc.c:7:
+/home/pratik/esp/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c: In function 'initialize_adc':
+/home/pratik/Downloads/totempole/main/ttpfc.c:87:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   87 |     adc1_config_channel_atten(ADC1_CHANNEL_0, ADC_ATTEN_DB_11); // Input voltage sense, GPIO36
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/pratik/esp/esp-idf/components/driver/deprecated/driver/adc_types_legacy.h:8,
+                 from /home/pratik/esp/esp-idf/components/driver/deprecated/driver/adc.h:15:
+/home/pratik/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:88:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   88 |     adc1_config_channel_atten(ADC1_CHANNEL_3, ADC_ATTEN_DB_11); // Output voltage sense, GPIO39
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pratik/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:89:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   89 |     adc1_config_channel_atten(ADC1_CHANNEL_6, ADC_ATTEN_DB_11); // INPUT Current sense, GPIO34
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pratik/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:90:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   90 |     adc1_config_channel_atten(ADC1_CHANNEL_4, ADC_ATTEN_DB_11); // OUTPUT Current sense, GPIO32
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pratik/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c: In function 'control_task':
+/home/pratik/Downloads/totempole/main/ttpfc.c:160:11: warning: variable 'input_current' set but not used [-Wunused-but-set-variable]
+  160 |     float input_current = 0.0;
+      |           ^~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:158:11: warning: variable 'input_voltage' set but not used [-Wunused-but-set-variable]
+  158 |     float input_voltage = 0.0;
+      |           ^~~~~~~~~~~~~
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable ttpfc.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/pratik/Downloads/totempole/build/ttpfc.bin
+[7/7] cd /home/pratik/Downloads/totempole/build/esp-idf/esptool_py && /home/pratik/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/pratik/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/pratik/Downloads/totempole/build/partition_table/partition-table.bin /home/pratik/Downloads/totempole/build/ttpfc.bin
+ttpfc.bin binary size 0x305c0 bytes. Smallest app partition is 0x100000 bytes. 0xcfa40 bytes (81%) free.

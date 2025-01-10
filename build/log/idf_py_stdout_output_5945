@@ -1,0 +1,223 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/pratik/Downloads/totempole/build/bootloader/esp-idf/esptool_py && /home/pratik/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/pratik/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/pratik/Downloads/totempole/build/bootloader/bootloader.bin
+Bootloader binary size 0x65a0 bytes. 0xa60 bytes (9%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ttpfc.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/ttpfc.c.obj 
+/home/pratik/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.5-dev-811-ga2f420a36e\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/pratik/Downloads/totempole/build/config -I/home/pratik/Downloads/totempole/main -I/home/pratik/esp/esp-idf/components/newlib/platform_include -I/home/pratik/esp/esp-idf/components/freertos/config/include -I/home/pratik/esp/esp-idf/components/freertos/config/include/freertos -I/home/pratik/esp/esp-idf/components/freertos/config/xtensa/include -I/home/pratik/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/pratik/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/pratik/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/pratik/esp/esp-idf/components/freertos/esp_additions/include -I/home/pratik/esp/esp-idf/components/esp_hw_support/include -I/home/pratik/esp/esp-idf/components/esp_hw_support/include/soc -I/home/pratik/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/pratik/esp/esp-idf/components/esp_hw_support/dma/include -I/home/pratik/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/pratik/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/pratik/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/home/pratik/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/pratik/esp/esp-idf/components/esp_hw_support/port/esp32/include -I/home/pratik/esp/esp-idf/components/heap/include -I/home/pratik/esp/esp-idf/components/heap/tlsf -I/home/pratik/esp/esp-idf/components/log/include -I/home/pratik/esp/esp-idf/components/soc/include -I/home/pratik/esp/esp-idf/components/soc/esp32 -I/home/pratik/esp/esp-idf/components/soc/esp32/include -I/home/pratik/esp/esp-idf/components/soc/esp32/register -I/home/pratik/esp/esp-idf/components/hal/platform_port/include -I/home/pratik/esp/esp-idf/components/hal/esp32/include -I/home/pratik/esp/esp-idf/components/hal/include -I/home/pratik/esp/esp-idf/components/esp_rom/include -I/home/pratik/esp/esp-idf/components/esp_rom/esp32/include -I/home/pratik/esp/esp-idf/components/esp_rom/esp32/include/esp32 -I/home/pratik/esp/esp-idf/components/esp_rom/esp32 -I/home/pratik/esp/esp-idf/components/esp_common/include -I/home/pratik/esp/esp-idf/components/esp_system/include -I/home/pratik/esp/esp-idf/components/esp_system/port/soc -I/home/pratik/esp/esp-idf/components/esp_system/port/include/private -I/home/pratik/esp/esp-idf/components/xtensa/esp32/include -I/home/pratik/esp/esp-idf/components/xtensa/include -I/home/pratik/esp/esp-idf/components/xtensa/deprecated_include -I/home/pratik/esp/esp-idf/components/lwip/include -I/home/pratik/esp/esp-idf/components/lwip/include/apps -I/home/pratik/esp/esp-idf/components/lwip/include/apps/sntp -I/home/pratik/esp/esp-idf/components/lwip/lwip/src/include -I/home/pratik/esp/esp-idf/components/lwip/port/include -I/home/pratik/esp/esp-idf/components/lwip/port/freertos/include -I/home/pratik/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/pratik/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/pratik/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/pratik/esp/esp-idf/components/esp_driver_gpio/include -I/home/pratik/esp/esp-idf/components/esp_pm/include -I/home/pratik/esp/esp-idf/components/mbedtls/port/include -I/home/pratik/esp/esp-idf/components/mbedtls/mbedtls/include -I/home/pratik/esp/esp-idf/components/mbedtls/mbedtls/library -I/home/pratik/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -I/home/pratik/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -I/home/pratik/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -I/home/pratik/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/home/pratik/esp/esp-idf/components/esp_app_format/include -I/home/pratik/esp/esp-idf/components/esp_bootloader_format/include -I/home/pratik/esp/esp-idf/components/app_update/include -I/home/pratik/esp/esp-idf/components/bootloader_support/include -I/home/pratik/esp/esp-idf/components/bootloader_support/bootloader_flash/include -I/home/pratik/esp/esp-idf/components/esp_partition/include -I/home/pratik/esp/esp-idf/components/efuse/include -I/home/pratik/esp/esp-idf/components/efuse/esp32/include -I/home/pratik/esp/esp-idf/components/esp_mm/include -I/home/pratik/esp/esp-idf/components/spi_flash/include -I/home/pratik/esp/esp-idf/components/esp_security/include -I/home/pratik/esp/esp-idf/components/pthread/include -I/home/pratik/esp/esp-idf/components/esp_timer/include -I/home/pratik/esp/esp-idf/components/esp_driver_gptimer/include -I/home/pratik/esp/esp-idf/components/esp_ringbuf/include -I/home/pratik/esp/esp-idf/components/esp_driver_uart/include -I/home/pratik/esp/esp-idf/components/vfs/include -I/home/pratik/esp/esp-idf/components/app_trace/include -I/home/pratik/esp/esp-idf/components/esp_event/include -I/home/pratik/esp/esp-idf/components/nvs_flash/include -I/home/pratik/esp/esp-idf/components/esp_phy/include -I/home/pratik/esp/esp-idf/components/esp_phy/esp32/include -I/home/pratik/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/pratik/esp/esp-idf/components/esp_vfs_console/include -I/home/pratik/esp/esp-idf/components/esp_netif/include -I/home/pratik/esp/esp-idf/components/wpa_supplicant/include -I/home/pratik/esp/esp-idf/components/wpa_supplicant/port/include -I/home/pratik/esp/esp-idf/components/wpa_supplicant/esp_supplicant/include -I/home/pratik/esp/esp-idf/components/esp_coex/include -I/home/pratik/esp/esp-idf/components/esp_wifi/include -I/home/pratik/esp/esp-idf/components/esp_wifi/include/local -I/home/pratik/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/home/pratik/esp/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -I/home/pratik/esp/esp-idf/components/unity/include -I/home/pratik/esp/esp-idf/components/unity/unity/src -I/home/pratik/esp/esp-idf/components/cmock/CMock/src -I/home/pratik/esp/esp-idf/components/console -I/home/pratik/esp/esp-idf/components/esp_driver_pcnt/include -I/home/pratik/esp/esp-idf/components/esp_driver_spi/include -I/home/pratik/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/pratik/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/pratik/esp/esp-idf/components/esp_driver_i2s/include -I/home/pratik/esp/esp-idf/components/sdmmc/include -I/home/pratik/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/pratik/esp/esp-idf/components/esp_driver_sdspi/include -I/home/pratik/esp/esp-idf/components/esp_driver_sdio/include -I/home/pratik/esp/esp-idf/components/esp_driver_dac/include -I/home/pratik/esp/esp-idf/components/esp_driver_rmt/include -I/home/pratik/esp/esp-idf/components/esp_driver_tsens/include -I/home/pratik/esp/esp-idf/components/esp_driver_sdm/include -I/home/pratik/esp/esp-idf/components/esp_driver_i2c/include -I/home/pratik/esp/esp-idf/components/esp_driver_ledc/include -I/home/pratik/esp/esp-idf/components/esp_driver_parlio/include -I/home/pratik/esp/esp-idf/components/driver/deprecated -I/home/pratik/esp/esp-idf/components/driver/i2c/include -I/home/pratik/esp/esp-idf/components/driver/touch_sensor/include -I/home/pratik/esp/esp-idf/components/driver/twai/include -I/home/pratik/esp/esp-idf/components/driver/touch_sensor/esp32/include -I/home/pratik/esp/esp-idf/components/http_parser -I/home/pratik/esp/esp-idf/components/esp-tls -I/home/pratik/esp/esp-idf/components/esp-tls/esp-tls-crypto -I/home/pratik/esp/esp-idf/components/esp_adc/include -I/home/pratik/esp/esp-idf/components/esp_adc/interface -I/home/pratik/esp/esp-idf/components/esp_adc/esp32/include -I/home/pratik/esp/esp-idf/components/esp_adc/deprecated/include -I/home/pratik/esp/esp-idf/components/esp_driver_isp/include -I/home/pratik/esp/esp-idf/components/esp_driver_cam/include -I/home/pratik/esp/esp-idf/components/esp_driver_cam/interface -I/home/pratik/esp/esp-idf/components/esp_driver_jpeg/include -I/home/pratik/esp/esp-idf/components/esp_driver_ppa/include -I/home/pratik/esp/esp-idf/components/esp_eth/include -I/home/pratik/esp/esp-idf/components/esp_gdbstub/include -I/home/pratik/esp/esp-idf/components/esp_hid/include -I/home/pratik/esp/esp-idf/components/tcp_transport/include -I/home/pratik/esp/esp-idf/components/esp_http_client/include -I/home/pratik/esp/esp-idf/components/esp_http_server/include -I/home/pratik/esp/esp-idf/components/esp_https_ota/include -I/home/pratik/esp/esp-idf/components/esp_https_server/include -I/home/pratik/esp/esp-idf/components/esp_psram/include -I/home/pratik/esp/esp-idf/components/esp_lcd/include -I/home/pratik/esp/esp-idf/components/esp_lcd/interface -I/home/pratik/esp/esp-idf/components/protobuf-c/protobuf-c -I/home/pratik/esp/esp-idf/components/protocomm/include/common -I/home/pratik/esp/esp-idf/components/protocomm/include/security -I/home/pratik/esp/esp-idf/components/protocomm/include/transports -I/home/pratik/esp/esp-idf/components/protocomm/include/crypto/srp6a -I/home/pratik/esp/esp-idf/components/protocomm/proto-c -I/home/pratik/esp/esp-idf/components/esp_local_ctrl/include -I/home/pratik/esp/esp-idf/components/espcoredump/include -I/home/pratik/esp/esp-idf/components/espcoredump/include/port/xtensa -I/home/pratik/esp/esp-idf/components/wear_levelling/include -I/home/pratik/esp/esp-idf/components/fatfs/diskio -I/home/pratik/esp/esp-idf/components/fatfs/src -I/home/pratik/esp/esp-idf/components/fatfs/vfs -I/home/pratik/esp/esp-idf/components/idf_test/include -I/home/pratik/esp/esp-idf/components/idf_test/include/esp32 -I/home/pratik/esp/esp-idf/components/ieee802154/include -I/home/pratik/esp/esp-idf/components/json/cJSON -I/home/pratik/esp/esp-idf/components/mqtt/esp-mqtt/include -I/home/pratik/esp/esp-idf/components/nvs_sec_provider/include -I/home/pratik/esp/esp-idf/components/perfmon/include -I/home/pratik/esp/esp-idf/components/rt/include -I/home/pratik/esp/esp-idf/components/spiffs/include -I/home/pratik/esp/esp-idf/components/wifi_provisioning/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/pratik/Downloads/totempole=. -fmacro-prefix-map=/home/pratik/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/ttpfc.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/ttpfc.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/ttpfc.c.obj -c /home/pratik/Downloads/totempole/main/ttpfc.c
+In file included from /home/pratik/Downloads/totempole/main/ttpfc.c:5:
+/home/pratik/esp/esp-idf/components/driver/deprecated/driver/mcpwm.h:15:2: warning: #warning "legacy MCPWM driver is deprecated, please migrate to the new driver (include driver/mcpwm_prelude.h)" [-Wcpp]
+   15 | #warning "legacy MCPWM driver is deprecated, please migrate to the new driver (include driver/mcpwm_prelude.h)"
+      |  ^~~~~~~
+In file included from /home/pratik/Downloads/totempole/main/ttpfc.c:6:
+/home/pratik/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from /home/pratik/Downloads/totempole/main/ttpfc.c:7:
+/home/pratik/esp/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c: In function 'initialize_adc':
+/home/pratik/Downloads/totempole/main/ttpfc.c:87:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   87 |     adc1_config_channel_atten(ADC1_CHANNEL_0, ADC_ATTEN_DB_11); // Input voltage sense, GPIO36
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/pratik/esp/esp-idf/components/driver/deprecated/driver/adc_types_legacy.h:8,
+                 from /home/pratik/esp/esp-idf/components/driver/deprecated/driver/adc.h:15:
+/home/pratik/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:88:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   88 |     adc1_config_channel_atten(ADC1_CHANNEL_3, ADC_ATTEN_DB_11); // Output voltage sense, GPIO39
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pratik/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:89:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   89 |     adc1_config_channel_atten(ADC1_CHANNEL_6, ADC_ATTEN_DB_11); // INPUT Current sense, GPIO34
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pratik/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:90:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   90 |     adc1_config_channel_atten(ADC1_CHANNEL_4, ADC_ATTEN_DB_11); // OUTPUT Current sense, GPIO32
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pratik/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c: In function 'initialize_adc_with_filter':
+/home/pratik/Downloads/totempole/main/ttpfc.c:114:5: error: unknown type name 'adc_filter_config_t'; did you mean 'adc_digi_init_config_t'?
+  114 |     adc_filter_config_t filter_config_voltage = {
+      |     ^~~~~~~~~~~~~~~~~~~
+      |     adc_digi_init_config_t
+/home/pratik/Downloads/totempole/main/ttpfc.c:115:9: error: field name not in record or union initializer
+  115 |         .unit = ADC_UNIT_1,
+      |         ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:115:9: note: (near initialization for 'filter_config_voltage')
+/home/pratik/Downloads/totempole/main/ttpfc.c:116:9: error: field name not in record or union initializer
+  116 |         .channel = ADC_CHANNEL_0, // Input voltage sense
+      |         ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:116:9: note: (near initialization for 'filter_config_voltage')
+/home/pratik/Downloads/totempole/main/ttpfc.c:116:20: warning: excess elements in scalar initializer
+  116 |         .channel = ADC_CHANNEL_0, // Input voltage sense
+      |                    ^~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:116:20: note: (near initialization for 'filter_config_voltage')
+/home/pratik/Downloads/totempole/main/ttpfc.c:117:9: error: field name not in record or union initializer
+  117 |         .mode = ADC_FILTER_MODE_MOVING_AVERAGE,
+      |         ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:117:9: note: (near initialization for 'filter_config_voltage')
+/home/pratik/Downloads/totempole/main/ttpfc.c:117:17: error: 'ADC_FILTER_MODE_MOVING_AVERAGE' undeclared (first use in this function)
+  117 |         .mode = ADC_FILTER_MODE_MOVING_AVERAGE,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:117:17: note: each undeclared identifier is reported only once for each function it appears in
+/home/pratik/Downloads/totempole/main/ttpfc.c:117:17: warning: excess elements in scalar initializer
+/home/pratik/Downloads/totempole/main/ttpfc.c:117:17: note: (near initialization for 'filter_config_voltage')
+/home/pratik/Downloads/totempole/main/ttpfc.c:118:9: error: field name not in record or union initializer
+  118 |         .len = ADC_FILTER_LENGTH, // Length of the moving average
+      |         ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:118:9: note: (near initialization for 'filter_config_voltage')
+/home/pratik/Downloads/totempole/main/ttpfc.c:23:27: warning: excess elements in scalar initializer
+   23 | #define ADC_FILTER_LENGTH 4 // Length of the moving average filter
+      |                           ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:118:16: note: in expansion of macro 'ADC_FILTER_LENGTH'
+  118 |         .len = ADC_FILTER_LENGTH, // Length of the moving average
+      |                ^~~~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:23:27: note: (near initialization for 'filter_config_voltage')
+   23 | #define ADC_FILTER_LENGTH 4 // Length of the moving average filter
+      |                           ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:118:16: note: in expansion of macro 'ADC_FILTER_LENGTH'
+  118 |         .len = ADC_FILTER_LENGTH, // Length of the moving average
+      |                ^~~~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:120:5: error: implicit declaration of function 'adc_filter_enable'; did you mean 'adc1_ulp_enable'? [-Wimplicit-function-declaration]
+  120 |     adc_filter_enable(&filter_config_voltage);
+      |     ^~~~~~~~~~~~~~~~~
+      |     adc1_ulp_enable
+/home/pratik/Downloads/totempole/main/ttpfc.c:123:5: error: unknown type name 'adc_filter_config_t'; did you mean 'adc_digi_init_config_t'?
+  123 |     adc_filter_config_t filter_config_output_voltage = {
+      |     ^~~~~~~~~~~~~~~~~~~
+      |     adc_digi_init_config_t
+/home/pratik/Downloads/totempole/main/ttpfc.c:124:9: error: field name not in record or union initializer
+  124 |         .unit = ADC_UNIT_1,
+      |         ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:124:9: note: (near initialization for 'filter_config_output_voltage')
+/home/pratik/Downloads/totempole/main/ttpfc.c:125:9: error: field name not in record or union initializer
+  125 |         .channel = ADC_CHANNEL_3, // Output voltage sense
+      |         ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:125:9: note: (near initialization for 'filter_config_output_voltage')
+/home/pratik/Downloads/totempole/main/ttpfc.c:125:20: warning: excess elements in scalar initializer
+  125 |         .channel = ADC_CHANNEL_3, // Output voltage sense
+      |                    ^~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:125:20: note: (near initialization for 'filter_config_output_voltage')
+/home/pratik/Downloads/totempole/main/ttpfc.c:126:9: error: field name not in record or union initializer
+  126 |         .mode = ADC_FILTER_MODE_MOVING_AVERAGE,
+      |         ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:126:9: note: (near initialization for 'filter_config_output_voltage')
+/home/pratik/Downloads/totempole/main/ttpfc.c:126:17: warning: excess elements in scalar initializer
+  126 |         .mode = ADC_FILTER_MODE_MOVING_AVERAGE,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:126:17: note: (near initialization for 'filter_config_output_voltage')
+/home/pratik/Downloads/totempole/main/ttpfc.c:127:9: error: field name not in record or union initializer
+  127 |         .len = ADC_FILTER_LENGTH,
+      |         ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:127:9: note: (near initialization for 'filter_config_output_voltage')
+/home/pratik/Downloads/totempole/main/ttpfc.c:23:27: warning: excess elements in scalar initializer
+   23 | #define ADC_FILTER_LENGTH 4 // Length of the moving average filter
+      |                           ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:127:16: note: in expansion of macro 'ADC_FILTER_LENGTH'
+  127 |         .len = ADC_FILTER_LENGTH,
+      |                ^~~~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:23:27: note: (near initialization for 'filter_config_output_voltage')
+   23 | #define ADC_FILTER_LENGTH 4 // Length of the moving average filter
+      |                           ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:127:16: note: in expansion of macro 'ADC_FILTER_LENGTH'
+  127 |         .len = ADC_FILTER_LENGTH,
+      |                ^~~~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:132:5: error: unknown type name 'adc_filter_config_t'; did you mean 'adc_digi_init_config_t'?
+  132 |     adc_filter_config_t filter_config_input_current = {
+      |     ^~~~~~~~~~~~~~~~~~~
+      |     adc_digi_init_config_t
+/home/pratik/Downloads/totempole/main/ttpfc.c:133:9: error: field name not in record or union initializer
+  133 |         .unit = ADC_UNIT_1,
+      |         ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:133:9: note: (near initialization for 'filter_config_input_current')
+/home/pratik/Downloads/totempole/main/ttpfc.c:134:9: error: field name not in record or union initializer
+  134 |         .channel = ADC_CHANNEL_6, // Input current sense
+      |         ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:134:9: note: (near initialization for 'filter_config_input_current')
+/home/pratik/Downloads/totempole/main/ttpfc.c:134:20: warning: excess elements in scalar initializer
+  134 |         .channel = ADC_CHANNEL_6, // Input current sense
+      |                    ^~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:134:20: note: (near initialization for 'filter_config_input_current')
+/home/pratik/Downloads/totempole/main/ttpfc.c:135:9: error: field name not in record or union initializer
+  135 |         .mode = ADC_FILTER_MODE_MOVING_AVERAGE,
+      |         ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:135:9: note: (near initialization for 'filter_config_input_current')
+/home/pratik/Downloads/totempole/main/ttpfc.c:135:17: warning: excess elements in scalar initializer
+  135 |         .mode = ADC_FILTER_MODE_MOVING_AVERAGE,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:135:17: note: (near initialization for 'filter_config_input_current')
+/home/pratik/Downloads/totempole/main/ttpfc.c:136:9: error: field name not in record or union initializer
+  136 |         .len = ADC_FILTER_LENGTH,
+      |         ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:136:9: note: (near initialization for 'filter_config_input_current')
+/home/pratik/Downloads/totempole/main/ttpfc.c:23:27: warning: excess elements in scalar initializer
+   23 | #define ADC_FILTER_LENGTH 4 // Length of the moving average filter
+      |                           ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:136:16: note: in expansion of macro 'ADC_FILTER_LENGTH'
+  136 |         .len = ADC_FILTER_LENGTH,
+      |                ^~~~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:23:27: note: (near initialization for 'filter_config_input_current')
+   23 | #define ADC_FILTER_LENGTH 4 // Length of the moving average filter
+      |                           ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:136:16: note: in expansion of macro 'ADC_FILTER_LENGTH'
+  136 |         .len = ADC_FILTER_LENGTH,
+      |                ^~~~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:141:5: error: unknown type name 'adc_filter_config_t'; did you mean 'adc_digi_init_config_t'?
+  141 |     adc_filter_config_t filter_config_output_current = {
+      |     ^~~~~~~~~~~~~~~~~~~
+      |     adc_digi_init_config_t
+/home/pratik/Downloads/totempole/main/ttpfc.c:142:9: error: field name not in record or union initializer
+  142 |         .unit = ADC_UNIT_1,
+      |         ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:142:9: note: (near initialization for 'filter_config_output_current')
+/home/pratik/Downloads/totempole/main/ttpfc.c:143:9: error: field name not in record or union initializer
+  143 |         .channel = ADC_CHANNEL_4, // Output current sense
+      |         ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:143:9: note: (near initialization for 'filter_config_output_current')
+/home/pratik/Downloads/totempole/main/ttpfc.c:143:20: warning: excess elements in scalar initializer
+  143 |         .channel = ADC_CHANNEL_4, // Output current sense
+      |                    ^~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:143:20: note: (near initialization for 'filter_config_output_current')
+/home/pratik/Downloads/totempole/main/ttpfc.c:144:9: error: field name not in record or union initializer
+  144 |         .mode = ADC_FILTER_MODE_MOVING_AVERAGE,
+      |         ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:144:9: note: (near initialization for 'filter_config_output_current')
+/home/pratik/Downloads/totempole/main/ttpfc.c:144:17: warning: excess elements in scalar initializer
+  144 |         .mode = ADC_FILTER_MODE_MOVING_AVERAGE,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:144:17: note: (near initialization for 'filter_config_output_current')
+/home/pratik/Downloads/totempole/main/ttpfc.c:145:9: error: field name not in record or union initializer
+  145 |         .len = ADC_FILTER_LENGTH,
+      |         ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:145:9: note: (near initialization for 'filter_config_output_current')
+/home/pratik/Downloads/totempole/main/ttpfc.c:23:27: warning: excess elements in scalar initializer
+   23 | #define ADC_FILTER_LENGTH 4 // Length of the moving average filter
+      |                           ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:145:16: note: in expansion of macro 'ADC_FILTER_LENGTH'
+  145 |         .len = ADC_FILTER_LENGTH,
+      |                ^~~~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:23:27: note: (near initialization for 'filter_config_output_current')
+   23 | #define ADC_FILTER_LENGTH 4 // Length of the moving average filter
+      |                           ^
+/home/pratik/Downloads/totempole/main/ttpfc.c:145:16: note: in expansion of macro 'ADC_FILTER_LENGTH'
+  145 |         .len = ADC_FILTER_LENGTH,
+      |                ^~~~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c: In function 'control_task':
+/home/pratik/Downloads/totempole/main/ttpfc.c:216:25: error: implicit declaration of function 'adc_filter_get_average' [-Wimplicit-function-declaration]
+  216 |         input_voltage = adc_filter_get_average(ADC_UNIT_1, ADC_CHANNEL_0) * (3.3 / 4095.0) * (V_AC / 3.3);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:160:11: warning: variable 'input_current' set but not used [-Wunused-but-set-variable]
+  160 |     float input_current = 0.0;
+      |           ^~~~~~~~~~~~~
+/home/pratik/Downloads/totempole/main/ttpfc.c:158:11: warning: variable 'input_voltage' set but not used [-Wunused-but-set-variable]
+  158 |     float input_voltage = 0.0;
+      |           ^~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
