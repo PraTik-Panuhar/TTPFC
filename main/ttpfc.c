@@ -19,7 +19,7 @@
 #define MCPWM_GPIO_PWM0A GPIO_NUM_18
 #define MCPWM_GPIO_PWM0B GPIO_NUM_19
 
-#define ADC_FILTER_LENGTH 4 // Length of the moving average filter
+#define ADC_FILTER_LENGTH 12 // Length of the moving average filter
 
 /*############################################################################################################################
                                                 Software Filtering  ADC
